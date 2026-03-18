@@ -1,4 +1,4 @@
-package edu.teamrocket.gildedrose;
+package edu.teamrocket.gildedrose.domain;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
@@ -35,7 +35,7 @@ public class NormalItemTest {
         NormalItem normal = new NormalItem("+5 Dexterity Vest", 0, 20);
         normal.updateQuality();
         assertEquals(-1, normal.getSell_in(), 0);
-        assertEquals(18, normal.getQuality(), 0);    
+        assertEquals(18, normal.getQuality(), 0);
     }
 
     @Test
